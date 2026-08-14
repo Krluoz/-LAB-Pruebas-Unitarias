@@ -5,11 +5,14 @@ const subtract = function(a, b) {
   return a - b;
 }
 
-function divide(a, b){
+const divide = function (a, b){
+  if (b == 0) {
+    throw new Error("No se puede dividr entre cero");
+  }
   return a / b;
 }
 
-function multiply(a, b){
+const multiply = function (a, b){
   return a * b;
 }
 

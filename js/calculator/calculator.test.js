@@ -31,3 +31,7 @@ test('multply 5 * 20 to equal 100', () =>{
 test('multply -8 * 5 to equal -40', () =>{
   expect(calculator.multiply(-8, 5)).toBe(-40);
 });
+
+test('divide error with the second argument is 0', () =>{
+  expect(() =>divide(5,0)).toThrow();
+});
