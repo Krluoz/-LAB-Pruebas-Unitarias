@@ -15,3 +15,19 @@ test('subtract 5 - 4 to equal 1', () => {
 test('subtract -5 - -10 to equal 5', () => {
   expect(calculator.subtract(-5, -10)).toBe(5);
 });
+
+test('divide 10 / 2 to equal 5', () =>{
+  expect(calculator.divide(10, 2)).toBe(5);
+});
+
+test('divide -9 / -4 to equal 2.25', () =>{
+  expect(calculator.divide(-9, -4)).toBe(2.25);
+});
+
+test('multply 5 * 20 to equal 100', () =>{
+  expect(calculator.multiply(5,20)).toBe(100);
+});
+
+test('multply -8 * 5 to equal -40', () =>{
+  expect(calculator.multiply(-8, 5)).toBe(-40);
+});
